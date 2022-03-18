@@ -21,7 +21,7 @@ Route::redirect('/anasayfa','/home')->name('anasayfa');
 Route::get('/', function () {
     return view('home.index',['name'=>'Nazliii']);
 });
-//asdfghygfd
+//asdfghygfdasdfgh
 
 
 Route::get('/home',[homeController::class,'index'])->name('home');;
