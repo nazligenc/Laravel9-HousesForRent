@@ -13,20 +13,24 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |asdasadasdja
 */
-
-Route::get('/home2', function () {
+// 1-Do something in route
+Route::get('/hello', function () {
+    return 'Hello World';
+});
+// 2-Call view in route
+Route::get('/welcome',function(){
     return view('welcome');
 });
-Route::redirect('/anasayfa','/home')->name('anasayfa');
-Route::get('/', function () {
-    return view('home.index',['name'=>'Nazliii']);
-});
-//asdfghygfdasdfgh
+// 3-Call Controller Function
+Route::get('/',[HomeController::class,'index'])->name('home');
 
+//4-Route->Controller->View
+Route::get('/test',[HomeController::class,'test'])->name('test');
+//5-Route with parameters
+Route::get('/param/{id}/{number}',[HomeController::class,'param'])->name('param');
+//Route with post
+Route::get('/save',[HomeController::class,'save'])->name('save');
 
-Route::get('/home',[homeController::class,'index'])->name('home');;
-//Route::get('/test/{id}/{name}',[homeController::class,'test'])->where(['id'=>'[0-9]+','name'=>'[A-Za-z]+']);
-Route::get('/test/{id}/{name}',[homeController::class,'test'])->whereNumber('id')->whereAlpha('name')->name('test');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

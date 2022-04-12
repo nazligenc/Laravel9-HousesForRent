@@ -6,20 +6,36 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    //
     public function index()
     {
-        return view('home.index');
+        echo "Index Function";
     }
-    public function test($id,$name)
+    public function test()
     {
-        return view('home.test',['id'=>$id,'name'=>$name]);
-        /*
-    echo"ID Number:",$id;
-    echo"Name:",$name;
-    for($i=1;$i<=$id;$i+=1){
-        echo "<br> $i-$name";
+        return view('home.test');
     }
-        */
+    public function param($id,$number)
+    {
+       // echo "Paramater 1:", $id;
+        //echo "<br>Paramater 2:", $number;
+        //echo "<br>Sum Parameters:",$id+$number;
+        return view('home.test2',
+        [
+            'id' => $id,
+            'number' => $number
+            ]);
+    }
+    public function save(Request $request)
+    {
+       // echo "Save Function<br>";
+        //echo "First Name:",$_REQUEST["fname"];
+        //echo "<br>Last Name:",$_REQUEST["lname"];
+        //return view('home.test2',
+            [
+                'fname' =>$_REQUEST["fname"],
+                'lname' =>$_REQUEST["lname"]
+            ]);
     }
 
 }
