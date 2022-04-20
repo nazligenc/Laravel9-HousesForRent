@@ -5,8 +5,10 @@
 @section('slider')
 
 @include('home.slider')
-@section('content')
 @endsection
+
+@section('content')
+
     <!-- about -->
     <div class="about">
         <div class="container-fluid">
