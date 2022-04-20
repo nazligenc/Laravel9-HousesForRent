@@ -1,6 +1,6 @@
 @extends('layouts.frontbase')
 
-@section('title', 'Homes For Sales')
+@section('title', 'Houses For Rent')
 
 @section('slider')
 
