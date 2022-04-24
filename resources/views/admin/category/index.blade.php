@@ -42,9 +42,9 @@
                                 <td>{{$rs->keywords}}</td>
                                 <td>{{$rs->description}}</td>
                                 <td>{{$rs->status}}</td>
-                                <td><a href="/admin/category/edit{{$rs->id}}" class="btn btn-outline-secondary btn-info">Edit</a></td>
-                                <td><a href="/admin/category/delete{{$rs->id}}" class="btn btn-outline-secondary btn-danger">Delete</a></td>
-                                <td><a href="/admin/category/show{{$rs->id}}" class="btn btn-outline-secondary btn-success">Show</a></td>
+                                <td><a href="/admin/category/edit/{{$rs->id}}" class="btn btn-outline-secondary btn-info">Edit</a></td>
+                                <td><a href="/admin/category/delete/{{$rs->id}}" class="btn btn-outline-secondary btn-danger">Delete</a></td>
+                                <td><a href="/admin/category/show/{{$rs->id}}" class="btn btn-outline-secondary btn-success">Show</a></td>
                             </tr>
                             @endforeach
                             </tbody>
