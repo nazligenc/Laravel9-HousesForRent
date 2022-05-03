@@ -21,6 +21,7 @@
 </head>
 <body>
 @section('sidebar')
+
     @include("admin.sidebar")
 @show
 

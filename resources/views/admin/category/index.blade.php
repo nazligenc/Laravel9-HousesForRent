@@ -5,9 +5,8 @@
 @section('content')
     <div class="main-panel">
         <div class="content-wrapper">
-            <h1>Category List</h1>
             <div class="page-header">
-                <h3 class="page-title">Category List</h3>
+                <a href="/admin/category/create" class="btn btn-primary btn-lg" style="width: 200px">Add Category</a>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/admin">Tables</a></li>
@@ -17,8 +16,7 @@
             </div>
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Basic Table</h4>
-                    <p class="card-description"> Add class <code>.table</code>
+                    <h4 class="card-title">Category List</h4>
                     </p>
                     <div class="table-responsive">
                         <table class="table">

@@ -94,7 +94,7 @@ class CategoryController extends Controller
         $data->save();
         return redirect('admin/category');
     }
-    
+
 
     /**
      * Remove the specified resource from storage.

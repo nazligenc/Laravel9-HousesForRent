@@ -61,27 +61,88 @@
             <li class="nav-item menu-items">
                 <a class="nav-link" href="/admin">
               <span style="color: #2caae1"class="menu-icon">
-                <ion-icon name="home"></ion-icon>
+                <ion-icon name="caret-forward-outline"></ion-icon>
               </span>
                     <span class="menu-title">Dashboard</span>
                 </a>
             </li>
             <li class="nav-item menu-items">
                 <a class="nav-link" href="/admin/category">
-              <span style="color: #ff3922" class="menu-icon">
+              <span style="color: #9b1308 " class="menu-icon">
                 <ion-icon name="apps-outline"></ion-icon>
               </span>
                     <span class="menu-title">Categories</span>
                 </a>
             </li>
+
             <li class="nav-item menu-items">
-                <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <span style="color: #fffa39" class="menu-icon">
-                <ion-icon name="briefcase-outline"></ion-icon>
+                <a class="nav-link" href="/admin/home" >
+              <span style="color: #ff3922" class="menu-icon">
+                <ion-icon name="home-outline"></ion-icon>
               </span>
-                    <span class="menu-title">Reservation</span>
-                    <i class="menu-arrow"></i>
+                    <span class="menu-title">Home</span>
                 </a>
+            </li>
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="/admin/image" >
+              <span style="color: #5E50F9"class="menu-icon">
+                <ion-icon name="aperture-outline"></ion-icon>
+              </span>
+                    <span class="menu-title">Image</span>
+                </a>
+            </li>
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="/admin/comment">
+              <span style="color: #d9edf7" class="menu-icon">
+               <ion-icon name="chatbubble-outline"></ion-icon>
+              </span>
+                    <span class="menu-title">Comments</span>
+                </a>
+
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="/admin/messages">
+              <span style="color: #ff3922" class="menu-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </span>
+                    <span class="menu-title">Messages</span>
+                </a>
+            </li>
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="/admin/profile">
+              <span style="color: #856404" class="menu-icon">
+               <ion-icon name="people-circle-outline"></ion-icon>
+              </span>
+                    <span class="menu-title">Profile</span>
+                </a>
+            </li>
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="/admin/user">
+              <span style="color: #2caae1" class="menu-icon">
+                <ion-icon name="person-circle-outline"></ion-icon>
+              </span>
+                    <span class="menu-title">Users</span>
+                </a>
+            </li>
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="/admin/faq">
+              <span style="color: #ff3922" class="menu-icon">
+                <ion-icon name="help-outline"></ion-icon>
+              </span>
+                    <span class="menu-title">FAQ</span>
+                </a>
+            </li>
+
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="/admin/setting">
+              <span style="color: #00a045" class="menu-icon">
+                  <ion-icon name="settings-outline"></ion-icon>
+
+              </span>
+                    <span class="menu-title">Settings</span>
+                </a>
+            </li>
+
+
                 <div class="collapse" id="ui-basic">
                     <ul class="nav flex-column sub-menu">
                         <li class="nav-item"> <a class="nav-link" href="/pages/ui-features/buttons.html" style="color: #9b1308">New Reserv</a></li>
@@ -91,70 +152,15 @@
                     </ul>
                 </div>
             </li>
-            <li class="nav-item menu-items">
-                <a class="nav-link" href="/admin/package">
-              <span class="menu-icon">
-                <i class="mdi mdi-playlist-play"></i>
-              </span>
-                    <span class="menu-title">Package</span>
-                </a>
+
+
+
+
+
+
             </li>
-            <li class="nav-item menu-items">
-                <a class="nav-link" href="/admin/image">
-              <span style="color: #783ee3"class="menu-icon">
-                  <ion-icon name="aperture-outline"></ion-icon>
-              </span>
-                    <span class="menu-title">Image</span>
-                </a>
-            </li>
-            <li class="nav-item menu-items">
-                <a class="nav-link" href="/admin/comment">
-              <span class="menu-icon">
-                <ion-icon name="chatbox-outline"></ion-icon>
-              </span>
-                    <span class="menu-title">Comments</span>
-                </a>
-            </li>
-            <li class="nav-item menu-items">
-                <a class="nav-link" href="/admin/social">
-              <span style="color: #346bff" class="menu-icon">
-                <ion-icon name="share-social-outline"></ion-icon>
-              </span>
-                    <span class="menu-title">Social Media</span>
-                </a>
-            </li>
-            <li class="nav-item menu-items">
-                <a class="nav-link" href="/admin/messages">
-              <span class="menu-icon">
-               <ion-icon name="chatbubble-outline"></ion-icon>
-              </span>
-                    <span class="menu-title">Messages</span>
-                </a>
-            </li>
-            <li class="nav-item menu-items">
-                <a class="nav-link" href="/admin/users">
-              <span style="color: #6efff2" class="menu-icon">
-                <ion-icon name="person-circle-outline"></ion-icon>
-              </span>
-                    <span class="menu-title">Users</span>
-                </a>
-            </li>
-            <li class="nav-item menu-items">
-                <a class="nav-link" href="/admin/faq">
-              <span style="color: #ffffff" class="menu-icon">
-                <ion-icon name="help-outline"></ion-icon>
-              </span>
-                    <span class="menu-title">FAQ</span>
-                </a>
-            </li>
-            <li class="nav-item menu-items">
-                <a class="nav-link" href="/admin/setting">
-              <span style="color: #00ac4a" class="menu-icon">
-                <ion-icon name="hammer-sharp"></ion-icon>
-              </span>
-                    <span class="menu-title">Settings</span>
-                </a>
-            </li>
+
+
         </ul>
     </nav>
     <!-- partial -->
